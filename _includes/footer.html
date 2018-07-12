@@ -1,0 +1,64 @@
+<div id="devfest-footer">  
+
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+
+          <img height="32" width="77" src="{{site.url}}/img/adi.png">
+           <span id="made-by"><br>Site designed by Will Essilfie. </span> 
+          <!-- <small><br>Site designed by Will Essilfie.</small> -->
+
+        </div>
+        <div class="col-6 col-md">
+          <h5>Social Media</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Facebook</a></li>
+            <li><a class="text-muted" href="#">Twitter</a></li>
+            <li><a class="text-muted" href="#">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Email</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Featured Tracks</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Data Science</a></li>
+            <li><a class="text-muted" href="#">iOS</a></li>
+            <li><a class="text-muted" href="#">Bots</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About ADI</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="https://www.adicu.com">ADI Website</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+</div>
+
+<script>
+/* Randomly select a new background image each time */
+  document.addEventListener('DOMContentLoaded', function() {
+    var images = ['a.jpg', 'b.jpg', 'c.jpg', 'd.jpg', 'e.jpg', 'f.jpg', 'g.jpg', 'h.jpg',
+    'i.jpg','j.jpg', 'k.jpg','l.jpg','m.jpg'];
+    var random_img = images[Math.floor(Math.random() * images.length)];
+    var img_path = "{{site.url}}/img/" + random_img;
+    //document.getElementsByClassName('home-img')[0].style.backgroundImage="url(" + img_path + ")"; 
+    document.body.style.backgroundImage="url(" + img_path + ")"; 
+}, false);
+
+</script>
+
+
+<!-- Required to go with Bootstrap 4-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+ <script  src="{{site.baseurl}}/js/index.js"></script>
