@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title> ADI </title>
+	<title> DevFest </title>
 
 
     <!-- Priority tags. These must come first. -->
@@ -14,11 +14,11 @@
     <meta name="author" content="ADI">
     <meta name="robots" content="index, follow">
 
-    <meta property="og:title" content=" ADI: All things tech at Columbia ">
+    <meta property="og:title" content="Columbia's annual week-long learnathon and hackathon">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="">
+    <meta property="og:url" content="http://localhost:4000">
     <meta property="og:image" content=" ./static/img/logo/blue.png?h=b2a369e6 ">
-    <meta property="og:description" content="ADI is a student group at Columbia that aims to foster a community of students interested in technology.">
+    <meta property="og:description" content="Columbia's annual week-long learnathon and hackathon">
 
 
 
@@ -133,7 +133,7 @@
       <div class="row">
         <div class="col-12 col-md">
 
-          <img height="32" width="77" src="/img/adi.png">
+          <img height="32" width="77" src="http://localhost:4000/img/adi.png">
            <span id="made-by"><br>Site designed by Will Essilfie. </span> 
           <!-- <small><br>Site designed by Will Essilfie.</small> -->
 
@@ -176,7 +176,7 @@
     var images = ['a.jpg', 'b.jpg', 'c.jpg', 'd.jpg', 'e.jpg', 'f.jpg', 'g.jpg', 'h.jpg',
     'i.jpg','j.jpg', 'k.jpg','l.jpg','m.jpg'];
     var random_img = images[Math.floor(Math.random() * images.length)];
-    var img_path = "/img/" + random_img;
+    var img_path = "http://localhost:4000/img/" + random_img;
     //document.getElementsByClassName('home-img')[0].style.backgroundImage="url(" + img_path + ")"; 
     document.body.style.backgroundImage="url(" + img_path + ")"; 
 }, false);
